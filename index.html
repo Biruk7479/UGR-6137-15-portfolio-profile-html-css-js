@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/css/index.css" rel="stylesheet" />
+    <link href="src/css/home.css" rel="stylesheet" />
+    <link rel="icon" href="src/images/icon.png" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logo-img" src="src/images/logo.png" />
+          <h3 class="logo-name">Biruk Ayalew</h3>
+        </div>
+        <div>
+          <ul class="nav-content">
+            <li><a class="menu" id="selected" href="index.html">Home</a></li>
+            <li><a class="menu" href="src/about.html">About</a></li>
+            <li><a class="menu" href="src/projects.html">Projects</a></li>
+            <li><a class="menu" href="src/education.html">Education</a></li>
+          </ul>
+        </div>
+        <div class="contact-me">
+          <ul>
+            <li>
+              <a class="message" href="src/contactMe.html"
+                ><i class="ri-mail-line"></i> Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="container" id="home">
+        <div class="left">
+          <div class="first">
+            <h2>Hello, I am</h2>
+            <h1>Biruk Ayalew</h1>
+            <p class="description">
+              A 20-year-old Web Developer with a deep passion for crafting
+              elegant and user-friendly websites. With a creative mindset and
+              strong technical skills, I specialize in turning web ideas into
+              visually stunning and functional realities.
+            </p>
+            <div class="tabs">
+              <button class="tab-button" onclick="showTab('skills', this)">
+                Skills
+              </button>
+              <button class="tab-button" onclick="showTab('education', this)">
+                Education
+              </button>
+              <button
+                class="tab-button"
+                onclick="showTab('certifications', this)"
+              >
+                Certifications
+              </button>
+            </div>
+            <div id="tab-content" class="tab-content">
+              <ul id="skills" class="tab active-tab">
+                <li>HTML & CSS</li>
+                <li>Tailwind</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+              <ul id="education" class="tab">
+                <li>Bachelor of Science in Computer Science</li>
+                <li>High School Diploma</li>
+              </ul>
+              <ul id="certifications" class="tab">
+                <li>Certified Web Developer</li>
+                <li>Python Essentials 1 & 2</li>
+                <li>GDSC Intro to Backend</li>
+              </ul>
+            </div>
+          </div>
+          <div class="second">
+            <div class="buttons">
+              <a
+                href="src/files/CV.pdf"
+                download="Biruk_Ayalew_CV.pdf"
+                class="button filled-button"
+              >
+                Download CV
+              </a>
+              <a href="src/contactMe.html" class="button border-button"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <aside class="profile-image">
+            <img src="src/images/photo-1.jpg" alt="Biruk's photo" width="450" />
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <p>Biruk Ayalew</p>
+        <p>+251 972676465 | Biruka2580@example.com</p>
+        <div class="social-icons">
+          <a href="https://github.com/Biruk7479" class="ri-github-fill"></a>
+          <a
+            href="https://www.instagram.com/biruk7479/"
+            class="ri-instagram-fill"
+          ></a>
+          <a href="https://t.me/B_7479" class="ri-telegram-2-fill"></a>
+          <a
+            href="https://www.linkedin.com/in/biruk7479"
+            class="ri-linkedin-box-fill"
+          ></a>
+        </div>
+        <p class="copyright">© 2024 Biruk Ayalew. All Rights Reserved</p>
+      </footer>
+      <script src="src/JS/home.js"></script>
+    </main>
+  </body>
+</html>
