@@ -13,284 +13,365 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../src/css/index.css" rel="stylesheet" />
+    <link href="../src/css/about.css" rel="stylesheet" />
+    <link rel="icon" href="images/icon.png" />
+
     <title>About Me</title>
   </head>
   <body>
-    <!-- Header -->
     <header>
       <nav>
-        <div class="logo">Biruk Ayalew</div>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="contactMe.html"><i class="ri-mail-line"></i> Contact Me</a>
-          </li>
-        </ul>
+        <div class="logo">
+          <img class="logo-img" src="images/logo.png" />
+          <h3 class="logo-name">Biruk Ayalew</h3>
+        </div>
+        <div>
+          <ul class="nav-content">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" id="selected" href="about.html">About</a></li>
+            <li><a class="menu" href="projects.html">Projects</a></li>
+            <li><a class="menu" href="education.html">Education</a></li>
+          </ul>
+        </div>
+        <div class="contact-me">
+          <ul>
+            <li>
+              <a class="message" href="contactMe.html"
+                ><i class="ri-mail-line"></i> Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-      <!-- About Me Section -->
       <section id="about">
-        <h1>
-          About Me
-
-          <!-- Audio Button -->
-          <button class="audio-btn">
-            <i class="ri-volume-up-line"></i>
-          </button>
-          <!-- the button above doesn't currently work till we add JS but the one below the "About Me" description functions correctly -->
-        </h1>
         <div class="about-section">
-          <img
-            src="images/AboutMe.png"
-            alt="Biruk's Photo"
-            class="about-photo"
-          />
-          <p>
-            I am Biruk Ayalew, a passionate and skilled web developer with a
-            knack for creating visually appealing and user-friendly websites. My
-            journey in web development has been fueled by curiosity, a love for
-            learning, and the goal to bring ideas to life. Whether crafting a
-            complex backend or designing intuitive user interfaces, I approach
-            every project with creativity and precision.
-          </p>
-          <!-- Hidden Audio Player which will be later in use when we add CSS-->
-          <div id="audio-player-container" class="hidden">
-            <audio id="aboutMeAudio" controls>
-              <source src="audio/about-me.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
+          <div class="about-photo">
+            <img
+              src="images/AboutMe.png"
+              alt="Biruk's Photo"
+              class="about-photo"
+            />
+          </div>
+          <div class="about-description">
+            <h1>
+              About Me
+
+              <button class="audio-btn">
+                <i class="ri-volume-up-line"></i>
+              </button>
+            </h1>
+            <p>
+              I am Biruk Ayalew, a passionate and skilled web developer with a
+              knack for creating visually appealing and user-friendly websites.
+              My journey in web development has been fueled by curiosity, a love
+              for learning, and the goal to bring ideas to life. Whether
+              crafting a complex backend or designing intuitive user interfaces,
+              I approach every project with creativity and precision.
+            </p>
+
+            <!-- Hidden Audio Player which will be later in use when we add CSS-->
+            <div id="audio-player-container" class="hidden">
+              <audio id="aboutMeAudio" controls>
+                <source src="audio/about-me.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Hobbies and Adventures Section -->
-      <!-- Hobbies and Adventures Section -->
       <section id="hobbies">
-        <h2>Hobbies and Adventures</h2>
-        <div class="hobbies-cards">
-          <div class="card">
-            <img src="images/hiking.jpg" alt="Hobby 1" width="500" />
-            <p>Exploring nature and hiking in the mountains.</p>
+        <h1>My Hobbies</h1>
+        <div class="hobbies-container">
+          <div class="hobby-card">
+            <img src="images/hiking.jpg" alt="Nature and Hiking" />
+            <h2>Nature and Hiking</h2>
+            <hr class="hobby-line" />
+            <p>
+              Wandering through serene mountain trails and breathing in the
+              crisp air of the wilderness fills me with peace and inspiration.
+              It's where I reconnect with nature and recharge my spirit.
+            </p>
           </div>
-          <div class="card">
-            <img src="images/photography.jpg" alt="Hobby 2" width="500" />
-            <p>Photography - Capturing moments through the lens.</p>
+          <div class="hobby-card">
+            <img src="images/photography.jpg" alt="Photography" />
+            <h2>Photography</h2>
+            <hr class="hobby-line" />
+            <p>
+              Every click of the camera is an opportunity to freeze time and
+              tell a story. Whether it's a breathtaking landscape or a fleeting
+              candid moment, photography lets me see the world through a
+              different lens.
+            </p>
           </div>
-          <div class="card">
-            <img src="images/chess.png" alt="Hobby 3" width="500" />
-            <p>Playing chess to enhance strategic thinking.</p>
+          <div class="hobby-card">
+            <img src="images/chess.png" alt="Chess" />
+            <h2>Chess</h2>
+            <hr class="hobby-line" />
+            <p>
+              Engaging in a game of chess isn't just a pastime, it's a mental
+              workout. I enjoy the challenge of coordinating, thinking ahead,
+              and finding creative ways to outmaneuver my opponent.
+            </p>
           </div>
-          <div class="card">
-            <img src="images/code.jpg" alt="Hobby 4" width="500" />
-            <p>Experimenting with new programming languages.</p>
+          <div class="hobby-card">
+            <img src="images/code.jpg" alt="Programming Exploration" />
+            <h2>Programming Exploration</h2>
+            <hr class="hobby-line" />
+            <p>
+              Diving into new programming languages feels like uncovering hidden
+              treasures. I relish the thrill of learning fresh concepts, solving
+              complex problems, and expanding my toolkit as a developer.
+            </p>
           </div>
         </div>
-        <a href="#more-hobbies" class="show-more">Show More</a>
-      </section>
 
-      <!-- Skills Section -->
+        <div class="show-more">
+          <button class="show-more-text">Show More...</button>
+        </div>
+      </section>
 
       <section id="skills">
-        <h2>My Skills</h2>
+        <h1>My Skills</h1>
         <div class="skills-container">
           <!-- Technical Skills -->
           <div class="skills-table">
             <h3>Technical Skills</h3>
             <table>
               <tr>
-                <td class="icon"><i class="fas fa-code"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-code"></i>
+                </td>
+                <td style="--progress-width: 70%">
                   <p>HTML</p>
                   <small>Forms, Semantic Markup, Structures</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 70%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">70%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-paint-brush"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fa-brands fa-css3"></i>
+                </td>
+                <td style="--progress-width: 60%">
                   <p>CSS</p>
                   <small>Layout Design, Animations</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 60%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">60%</h6>
                   </div>
                 </td>
               </tr>
+
               <tr>
-                <td class="icon"><i class="fab fa-js-square"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fab fa-js-square"></i>
+                </td>
+                <td style="--progress-width: 65%">
                   <p>JavaScript</p>
                   <small>DOM Manipulation, Event Handling</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 50%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">65%</h6>
                   </div>
                 </td>
               </tr>
+
               <tr>
-                <td class="icon"><i class="fab fa-python"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fab fa-python"></i>
+                </td>
+                <td style="--progress-width: 55%">
                   <p>Python</p>
                   <small>Web Development, Data Analysis</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 55%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">55%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fab fa-react"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fab fa-react"></i>
+                </td>
+                <td style="--progress-width: 65%">
                   <p>React.js</p>
                   <small>Component-Based UI, Hooks</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 65%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">65%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fab fa-node"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fab fa-node"></i>
+                </td>
+                <td style="--progress-width: 60%">
                   <p>Node.js</p>
                   <small>Backend Development, Express.js</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 60%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">60%</h6>
                   </div>
                 </td>
               </tr>
             </table>
           </div>
 
-          <!-- Professional Skills -->
           <div class="skills-table">
             <h3>Professional Skills</h3>
             <table>
               <tr>
-                <td class="icon"><i class="fas fa-comment-dots"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-comment-dots"></i>
+                </td>
+                <td style="--progress-width: 85%">
                   <p>Communication</p>
                   <small>Clear Messaging, Active Listening</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 85%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">85%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-users"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-users"></i>
+                </td>
+                <td style="--progress-width: 70%">
                   <p>Team Work</p>
                   <small>Collaboration, Conflict Resolution</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 70%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">70%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-tasks"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-tasks"></i>
+                </td>
+                <td style="--progress-width: 65%">
                   <p>Management</p>
                   <small>Task Delegation, Time Management</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 65%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">65%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-lightbulb"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-lightbulb"></i>
+                </td>
+                <td style="--progress-width: 80%">
                   <p>Creativity</p>
                   <small>Innovative Solutions, Brainstorming</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 80%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">80%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-search"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-search"></i>
+                </td>
+                <td style="--progress-width: 75%">
                   <p>Problem-Solving</p>
                   <small>Critical Thinking, Solution-Oriented</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 75%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">75%</h6>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="icon"><i class="fas fa-users-cog"></i></td>
-                <td>
+                <td class="icon">
+                  <i class="fas fa-users-cog"></i>
+                </td>
+                <td style="--progress-width: 70%">
                   <p>Leadership</p>
                   <small>Decision Making, Motivating Teams</small>
                   <div class="progress-bar">
-                    <div class="progress" style="width: 70%"></div>
+                    <div
+                      class="progress"
+                      style="width: var(--progress-width)"
+                    ></div>
+                    <h6 class="progress-label">70%</h6>
                   </div>
                 </td>
               </tr>
             </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- Interests Section -->
-      <section id="interests">
-        <h2>Interests</h2>
-        <div class="videos">
-          <!-- Video about Chess -->
-          <div class="video-item">
-            <video controls width="700">
-              <source src="videos/interest-1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p class="video-description">
-              This video piqued my interest in chess when I first saw it, and
-              when sharing this I hope it sparks yours as well. Chess is a
-              fascinating journey, and I encourage you to dive into it, starting
-              with the fundamentals and gradually progressing toward mastering
-              key strategies and tactics. It's an exciting challenge that I,
-              too, am eager to explore and conquer!
-            </p>
-          </div>
-
-          <!-- Video about Painting -->
-          <div class="video-item">
-            <video controls width="700">
-              <source src="videos/interest-2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p class="video-description">
-              I am looking forward to starting my journey in painting, where
-              I'll explore various techniques, from sketching to painting with
-              different mediums.
-            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <div>
-        <p>Biruka2580@example.com | +251 972676465</p>
-        <div class="social-icons">
-          <a href="https://github.com/Biruk7479" class="ri-github-fill"></a>
-          <a
-            href="https://www.linkedin.com/in/biruk7479"
-            class="ri-linkedin-box-line"
-          ></a>
-          <a
-            href="https://www.instagram.com/biruk7479/"
-            class="ri-instagram-line"
-          ></a>
-          <a href="https://t.me/B_7479" class="ri-telegram-2-line"></a>
-        </div>
-        <p>© 2024 Biruk Ayalew. All Rights Reserved</p>
+      <p>Biruk Ayalew</p>
+      <p>+251 972676465 | Biruka2580@example.com</p>
+      <div class="social-icons">
+        <a href="https://github.com/Biruk7479" class="ri-github-fill"></a>
+        <a
+          href="https://www.instagram.com/biruk7479/"
+          class="ri-instagram-fill"
+        ></a>
+        <a href="https://t.me/B_7479" class="ri-telegram-2-fill"></a>
+        <a
+          href="https://www.linkedin.com/in/biruk7479"
+          class="ri-linkedin-box-fill"
+        ></a>
       </div>
+      <p class="copyright">© 2024 Biruk Ayalew. All Rights Reserved</p>
     </footer>
+    <script src="JS/about.js"></script>
   </body>
 </html>

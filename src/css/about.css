@@ -1,0 +1,778 @@
+#about h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#about h1 .audio-btn {
+  background: var(--color-3);
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#about h1 .audio-btn i,
+.ri-volume-down-line {
+  font-size: 32px;
+}
+
+#about h1 .audio-btn:hover {
+  background: var(--brand-color);
+}
+.about-photo {
+  width: 50%;
+  display: flex;
+  justify-items: center;
+}
+.about-description {
+  width: 50%;
+  margin-bottom: 40px;
+}
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.about-section img {
+  width: 90%;
+  height: auto;
+}
+
+.about-section p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+#audio-player-container {
+  margin-top: 40px;
+  text-align: center;
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--color-7);
+}
+
+#aboutMeAudio {
+  /* width: 100%; */
+  /* max-width: 5000px; */
+  outline: none;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+#hobbies {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#hobbies h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: var(--black);
+}
+
+.hobbies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hobby-card {
+  background-color: var(--color-7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.hobby-card h2 {
+  font-size: 17px;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.hobby-line {
+  width: 70%;
+  height: 3px;
+  border-radius: 2px;
+  border: none;
+  background-color: var(--color-4);
+  margin: 8px auto;
+}
+.hobby-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--black);
+}
+#skills {
+  margin: 40px auto;
+  max-width: 80%;
+}
+
+#skills h1 {
+  font-size: 40px;
+  text-align: center;
+
+  margin-bottom: 40px;
+  color: var(--black);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skills-table {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-table h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 15px;
+}
+
+.icon {
+  /* width: 15%; */
+  /* padding: 0 8px; */
+  border: 2px solid var(--color-5);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+.icon i {
+  font-size: 40px;
+}
+
+td:nth-child(even) {
+  vertical-align: middle;
+  padding: 10px;
+  position: relative;
+}
+
+.skills-table p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skills-table small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: #404040;
+}
+
+.progress-bar {
+  background: var(--color-6);
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.progress-label {
+  background-color: var(--color-2);
+  border-radius: 10px;
+  padding: 3px;
+  color: var(--bg-color);
+}
+.progress span {
+  color: #ffffff !important;
+}
+.progress {
+  height: 100%;
+  background: var(--color-2);
+  border-radius: 4px;
+}
+
+tr td {
+  position: relative;
+}
+
+tr .progress-label {
+  position: absolute;
+  top: 52px;
+  right: calc(102% - var(--progress-width));
+  transform: translateX(50%);
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.show-more {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.show-more-text {
+  background-color: var(--color-3);
+  text-align: end;
+  margin: 20px 60px;
+  color: var(--bg-color);
+  display: inline;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .hobby-card p {
+    font-size: clamp(14px, 1.3vw, 16px);
+  }
+  .show-more {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hobby-card p {
+    font-size: clamp(11px, 1vw, 12px);
+  }
+  #hobbies {
+    padding: 30px 15px;
+  }
+
+  #hobbies .hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .hobby-card {
+    height: auto;
+    padding: 15px 10px;
+    margin: 8px 0px;
+  }
+  .hobby-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .show-more {
+    display: none;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-photo,
+  .about-description {
+    width: 100%;
+    justify-content: center;
+  }
+  #about .about-description h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  #audio-player-container {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  #skills {
+    margin: 20px auto;
+    max-width: 95%;
+  }
+  #skills h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  #skills .skills-container {
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .skills-table {
+    width: 49%;
+    padding: 10px;
+  }
+
+  .skills-table h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .icon i {
+    font-size: 24px;
+  }
+
+  td:nth-child(even) {
+    padding: 6px;
+  }
+
+  .skills-table p {
+    font-size: 0.8rem;
+  }
+
+  .skills-table small {
+    font-size: 0.75rem;
+  }
+
+  .progress-bar {
+    margin-top: 15px;
+    height: 4px;
+  }
+
+  table .progress-label {
+    top: 40px;
+    font-size: 10px;
+    padding: 1px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+}
+@media (max-width: 767px) and (min-width: 480px) {
+  #skills {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  #skills h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skills-table {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .skills-table h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .icon i {
+    font-size: 28px;
+  }
+
+  td:nth-child(even) {
+    padding: 8px;
+  }
+
+  .skills-table p {
+    font-size: 0.9rem;
+  }
+
+  .skills-table small {
+    font-size: 0.8rem;
+  }
+
+  .progress-bar {
+    margin-top: 20px;
+    height: 5px;
+  }
+
+  .progress-label {
+    top: 48px;
+    font-size: 11px;
+    padding: 2px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  #skills {
+    margin: 20px auto;
+    max-width: 95%;
+  }
+
+  #skills h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .skills-container {
+    gap: 10px;
+  }
+
+  .skills-table {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .skills-table h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .icon i {
+    font-size: 24px;
+  }
+
+  td:nth-child(even) {
+    padding: 6px;
+  }
+
+  .skills-table p {
+    font-size: 0.8rem;
+  }
+
+  .skills-table small {
+    font-size: 0.75rem;
+  }
+
+  .progress-bar {
+    margin-top: 15px;
+    height: 4px;
+  }
+
+  .progress-label {
+    top: 40px;
+    font-size: 10px;
+    padding: 1px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-description p {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .about-photo img {
+    width: 100%;
+  }
+  .hobby-card p {
+    font-size: clamp(12px, 1vw, 14px);
+  }
+
+  .hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .hobby-card {
+    padding: 15px;
+  }
+  .hobby-card:last-child {
+    display: none;
+  }
+  .hobbies .show-more {
+    display: block;
+  }
+  .skills-container {
+    gap: 15px;
+  }
+  table tr td:nth-child(even) {
+    padding: 5px;
+  }
+  .skills-table {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .skills-table h3 {
+    font-size: 24px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .icon i {
+    font-size: 32px;
+  }
+
+  .progress-bar {
+    margin-top: 20px;
+    height: 5px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+
+  td .progress-label {
+    top: 43px;
+    font-size: 11px;
+    padding: 2px;
+  }
+  .skills-table {
+    padding: 5px;
+  }
+  .skills-table p {
+    font-size: 0.9rem;
+  }
+
+  .skills-table small {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 660px) {
+  body #skills .skills-container {
+    flex-direction: column;
+  }
+  #skills {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  #skills h1,
+  #about h1,
+  #hobbies h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .about-description h3 {
+    font-size: 28px;
+  }
+
+  #skills .skills-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #skills .skills-table {
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .skills-table h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  #about h1 .audio-btn {
+    width: 35px;
+    height: 35px;
+  }
+  #about h1 .audio-btn i,
+  .ri-volume-down-line {
+    font-size: 28px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .icon i {
+    font-size: 28px;
+  }
+
+  td:nth-child(even) {
+    padding: 8px;
+  }
+
+  .skills-table p {
+    font-size: 0.9rem;
+  }
+
+  .skills-table small {
+    font-size: 0.8rem;
+  }
+
+  table .progress-bar {
+    margin-top: 30px;
+    height: 5px;
+  }
+
+  table .progress-label {
+    top: 55px;
+    font-size: 11px;
+    padding: 2px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (max-height: 480px) {
+  #skills {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  #skills h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skills-table {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .skills-table h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .icon i {
+    font-size: 28px;
+  }
+
+  td:nth-child(even) {
+    padding: 8px;
+  }
+
+  .skills-table p {
+    font-size: 0.9rem;
+  }
+
+  .skills-table small {
+    font-size: 0.8rem;
+  }
+
+  .progress-bar {
+    margin-top: 20px;
+    height: 5px;
+  }
+
+  table .progress-label {
+    top: 47px;
+    font-size: 11px;
+    padding: 2px;
+  }
+
+  .progress {
+    border-radius: 3px;
+  }
+  .hobby-card p {
+    font-size: clamp(12px, 1vw, 14px);
+  }
+
+  body #hobbies .hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  .hobby-card {
+    padding: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .hobby-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .hobby-card:last-child {
+    display: none;
+  }
+  .show-more {
+    display: block;
+  }
+}

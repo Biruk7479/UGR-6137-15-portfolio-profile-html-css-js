@@ -7,125 +7,156 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>Education &</title>
+    <!-- Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../src/css/index.css" rel="stylesheet" />
+
+    <link href="../src/css/education.css" rel="stylesheet" />
+    <link rel="icon" href="images/icon.png" />
+    <title>Education</title>
   </head>
 
   <body>
-    <!-- Header -->
     <header>
       <nav>
-        <div class="logo">Biruk Ayalew</div>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="contactMe.html"><i class="ri-mail-line"></i> Contact Me</a>
-          </li>
-        </ul>
+        <div class="logo">
+          <img class="logo-img" src="images/logo.png" />
+          <h3 class="logo-name">Biruk Ayalew</h3>
+        </div>
+        <div>
+          <ul class="nav-content">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" href="about.html">About</a></li>
+            <li><a class="menu" href="projects.html">Projects</a></li>
+            <li>
+              <a class="message" id="selected" href="education.html"
+                >Education</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contact-me">
+          <ul>
+            <li>
+              <a class="message" href="contactMe.html"
+                ><i class="ri-mail-line"></i> Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <!-- Education Page Content -->
     <main>
       <section class="education-section">
-        <h2>My Education Journey</h2>
-        <article class="education-item">
-          <!-- The first two pictures used here are random images since i couldnt find a photo of my highschool-->
-
-          <img src="images/school-1.jpg" alt="Middle School" width="500" />
-          <div class="education-details">
-            <h3>Middle School - Liza Academy (2015-2017)</h3>
-            <p>
-              This was my first school, where I started my educational journey.
-              I joined at the elementary level and completed my lower secondary
-              education here. It laid the foundation for my future academic
-              success.
-            </p>
+        <h2>My Educational Journey</h2>
+        <div class="education-sec">
+          <div class="education-item">
+            <div class="education-item-image">
+              <img src="images/school-1.jpg" alt="Middle School" />
+            </div>
+            <div class="divider"></div>
+            <div class="education-details">
+              <h4 class="school">Middle School - Liza Academy (2015-2017)</h4>
+              <p>
+                This was my first school, where I started my educational
+                journey. I joined at the elementary level and completed my lower
+                secondary education here. It laid the foundation for my future
+                academic success.
+              </p>
+            </div>
           </div>
-        </article>
 
-        <article class="education-item">
-          <img src="images/school-1.jpg" alt="High School" width="500" />
-          <div class="education-details">
-            <h3>High School - Liza Academy (2018-2021)</h3>
-            <p>
-              During high school, I studied under the regular curriculum,
-              preparing for my entrance exams. This was a challenging yet
-              exciting time that helped shape my academic focus.
-            </p>
+          <div class="education-item">
+            <div class="education-item-image">
+              <img src="images/school-3.png" alt="High School" />
+            </div>
+            <div class="divider"></div>
+            <div class="education-details">
+              <h4 class="school">High School - Liza Academy (2018-2021)</h4>
+              <p>
+                During high school, I studied under the regular curriculum,
+                preparing for my entrance exams. This was a challenging yet
+                exciting time that helped shape my academic focus.
+              </p>
+            </div>
           </div>
-        </article>
 
-        <article class="education-item">
-          <img src="images/school-2.jpg" alt="University" width="500" />
-          <div class="education-details">
-            <h3>
-              Bachelor's Degree - Addis Ababa University (2022-2026 Expected)
-            </h3>
-            <p>
-              Currently, I am pursuing a Bachelor's degree in Software
-              Engineering at AAiT. I am gaining valuable knowledge and skills
-              which will allow me to contribute meaningfully to the tech
-              industry.
-            </p>
+          <div class="education-item">
+            <div class="education-item-image">
+              <img src="images/school-2.jpg" alt="University" />
+            </div>
+            <div class="divider"></div>
+            <div class="education-details">
+              <h4 class="school">
+                Bachelor's Degree - Addis Ababa University (2022-2026 Expected)
+              </h4>
+              <p>
+                Currently, I am pursuing a Bachelor's degree in Software
+                Engineering at AAiT. I am gaining valuable knowledge and skills
+                which will allow me to contribute meaningfully to the tech
+                industry.
+              </p>
+            </div>
           </div>
-        </article>
+        </div>
       </section>
 
-      <!-- Section -->
       <section class="certificates-section">
-        <h2>Certifications</h2>
+        <h2>Certificates</h2>
         <div class="carousel-container">
-          <div class="carousel-item">
-            <img src="images/cert1.jpg" alt="Certificate 1" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert2.jpg" alt="Certificate 2" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert3.jpg" alt="Certificate 3" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert4.jpg" alt="Certificate 1" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert5.jpg" alt="Certificate 2" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert6.jpg" alt="Certificate 3" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert7.jpg" alt="Certificate 2" width="450" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/cert8.jpg" alt="Certificate 3" width="450" />
+          <div class="carousel-track">
+            <div class="carousel-item">
+              <img src="images/cert1.jpg" alt="Certificate 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert2.jpg" alt="Certificate 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert3.jpg" alt="Certificate 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert4.jpg" alt="Certificate 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert5.jpg" alt="Certificate 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert6.jpg" alt="Certificate 6" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert7.jpg" alt="Certificate 7" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/cert8.jpg" alt="Certificate 8" />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <div>
-        <p>Biruka2580@example.com | +251 972676465</p>
-        <div class="social-icons">
-          <a href="https://github.com/Biruk7479" class="ri-github-fill"></a>
-          <a
-            href="https://www.linkedin.com/in/biruk7479"
-            class="ri-linkedin-box-line"
-          ></a>
-          <a
-            href="https://www.instagram.com/biruk7479/"
-            class="ri-instagram-line"
-          ></a>
-          <a href="https://t.me/B_7479" class="ri-telegram-2-line"></a>
-        </div>
-        <p>© 2024 Biruk Ayalew. All Rights Reserved</p>
+      <p>Biruk Ayalew</p>
+      <p>+251 972676465 | Biruka2580@example.com</p>
+      <div class="social-icons">
+        <a href="https://github.com/Biruk7479" class="ri-github-fill"></a>
+        <a
+          href="https://www.instagram.com/biruk7479/"
+          class="ri-instagram-fill"
+        ></a>
+        <a href="https://t.me/B_7479" class="ri-telegram-2-fill"></a>
+        <a
+          href="https://www.linkedin.com/in/biruk7479"
+          class="ri-linkedin-box-fill"
+        ></a>
       </div>
+      <p class="copyright">© 2024 Biruk Ayalew. All Rights Reserved</p>
     </footer>
+    <script src="JS/education.js"></script>
   </body>
 </html>
